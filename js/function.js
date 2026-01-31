@@ -515,4 +515,27 @@
       new bootstrap.Modal(document.getElementById("apartmentModal")).show();
     });
   });
+
+  document.querySelectorAll(".apartmentCardSwiper").forEach((slider) => {
+    new Swiper(slider, {
+      loop: true,
+      autoplay: { delay: 2500, disableOnInteraction: false },
+      pagination: {
+        el: slider.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+    });
+  });
+
+  $(document).ready(function () {
+    $(".apartmentCardSwiper").each(function () {
+      $(this).magnificPopup({
+        delegate: "a.gallery-item",
+        type: "image",
+        gallery: { enabled: true },
+        mainClass: "mfp-fade",
+        zoom: { enabled: true, duration: 300 },
+      });
+    });
+  });
 })(jQuery);
