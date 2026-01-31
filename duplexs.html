@@ -109,7 +109,7 @@
             <!-- Page Header Box Start -->
             <div class="page-header-box">
               <h1 class="text-anime-style-3" data-cursor="-opaque">
-                Our amenities
+                Our Duplexs
               </h1>
               <nav class="wow fadeInUp">
                 <ol class="breadcrumb">
@@ -117,7 +117,7 @@
                     <a href="index.html">home / </a>
                   </li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    sites
+                    duplexs
                   </li>
                 </ol>
               </nav>
@@ -213,6 +213,14 @@
                 </ul>
               </div>
               <!-- Apartments Amenity List End -->
+              <button
+                class="btn-default btn-highlighted view-details-btn"
+                data-title="Studio Apartment"
+                data-desc="Compact and efficiently designed studio apartments offering smart layouts."
+                data-images='["images/apartments-plan-item-image-1.png","images/apartments-plan-item-image-2.png","images/apartments-plan-item-image-1.png"]'
+              >
+                View Details
+              </button>
             </div>
             <!-- Apartments Plan Item End -->
           </div>
@@ -278,7 +286,16 @@
                   </li>
                 </ul>
               </div>
+
               <!-- Apartments Amenity List End -->
+              <button
+                class="btn-default btn-highlighted view-details-btn"
+                data-title="Duplex Apartment"
+                data-desc="Spacious duplex apartments with two-level modern living."
+                data-images='["images/apartments-plan-item-image-2.png","images/apartments-plan-item-image-1.png","images/apartments-plan-item-image-2.png"]'
+              >
+                View Details
+              </button>
             </div>
             <!-- Apartments Plan Item End -->
           </div>
@@ -345,6 +362,14 @@
                 </ul>
               </div>
               <!-- Apartments Amenity List End -->
+              <button
+                class="btn-default btn-highlighted view-details-btn"
+                data-title="Luxury Penthouse"
+                data-desc="High-end penthouse with private terrace and city views."
+                data-images='["images/apartments-plan-item-image-1.png","images/apartments-plan-item-image-2.png","images/apartments-plan-item-image-1.png"]'
+              >
+                View Details
+              </button>
             </div>
             <!-- Apartments Plan Item End -->
           </div>
@@ -445,6 +470,36 @@
       <!-- Footer Copyright End -->
     </footer>
     <!-- Main Footer End -->
+
+    <!-- Apartment Details Modal with Slider -->
+    <div class="modal fade" id="apartmentModal" tabindex="-1">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <!-- Swiper -->
+            <div class="swiper apartmentSwiper">
+              <div class="swiper-wrapper" id="modalSlider"></div>
+
+              <!-- Controls -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <p class="mt-3 text-center" id="modalDesc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>

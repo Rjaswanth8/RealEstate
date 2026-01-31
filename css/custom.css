@@ -10133,3 +10133,50 @@ header.main-header.main-header-prime .slicknav_menu {
     right: -20px;
   }
 }
+
+/* Slider arrows color */
+.apartmentSwiper .swiper-button-next,
+.apartmentSwiper .swiper-button-prev {
+  color: #9c9c55;
+  width: 36px;
+  height: 36px;
+}
+
+.apartmentSwiper .swiper-button-prev {
+  right: 0px;
+}
+
+/* Make PREV smaller */
+.apartmentSwiper .swiper-button-prev {
+  width: 26px;
+  height: 26px;
+  opacity: 0.8;
+  left: 0px;
+}
+
+/* Arrow icon size */
+.apartmentSwiper .swiper-button-next::after,
+.apartmentSwiper .swiper-button-prev::after {
+  font-size: 16px;
+}
+
+/* Pagination dots */
+.apartmentSwiper .swiper-pagination-bullet {
+  background: #9c9c55;
+  opacity: 0.4;
+}
+
+.apartmentSwiper .swiper-pagination-bullet-active {
+  background: #9c9c55;
+  opacity: 1;
+}
+.view-details-btn {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+@media screen and (max-width: 968px) {
+  .hero-content-btn-prime {
+    flex-direction: column !important;
+  }
+}
